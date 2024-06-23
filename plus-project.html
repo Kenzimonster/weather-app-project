@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Kenzi's Weather App</title>
+  </head>
+  <body>
+    <section class="appBox">
+      <header>
+        <a href="https://www.shecodes.io/" target="_blank">
+          <img src="" alt="SheCodes logo" /></a
+        ><span class="dateTop" id="date-top">month 00, year</span>
+        <form class="citySelect" id="city-search">
+          <div class="searchBar">
+            <input
+              type="text"
+              placeholder="Enter a City.."
+              required
+              class="searchInput"
+              id="search-input"
+            />
+            <input type="Submit" value="Search" class="searchButton" />
+          </div>
+        </form>
+      </header>
+      <hr />
+      <div class="currentWeather">
+        <div>
+          <h1 class="current-city" id="current-city">Brisbane</h1>
+          <p class="currentWeatherDescription">
+            <span id="day-time">day 00:00</span>,
+            <span id="current-city-description">moderate rain </span><br />
+            Humidity:
+            <span class="currentHumidity" id="current-city-humidity">83</span>%,
+            Wind:<span class="currentWindspeed" id="current-city-windspeed"
+              >3</span
+            >
+            km/h
+          </p>
+        </div>
+        <div class="currentTemp">
+          <span class="currentTempIcon" id="current-temp-icon">🌞</span>
+          <span class="currentTempValue" id="current-temperature-value">11</span
+          ><span class="currentTempUnit">°C</span>
+        </div>
+      </div>
+
+      <ul class="forecast">
+        <li>Thu☀<br />7°c-21°c</li>
+        <li>Fri🌤<br />7°c-22°c</li>
+        <li>Sat🌤<br />7°c-22°c</li>
+        <li>Sun☀<br />7°c-22°c</li>
+        <li>Mon☀<br />6°c-21°c</li>
+        <li>Tue☀<br />5°c-21°c</li>
+        <li>Wed☀<br />5°c-21°c</li>
+      </ul>
+
+      <hr />
+      <footer>
+        <p class="footNote">
+          This project was coded by
+          <a
+            href="https://www.shecodes.io/graduates/127130-kaidance-kenzi-garbutt"
+            target="_blank"
+            >Kenzi</a
+          >
+          and is open-sourced on
+          <a
+            href="https://github.com/Kenzimonster/projects/blob/main/plus-project.html"
+            target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+        </p>
+      </footer>
+    </section>
+  </body>
+  <script src="src/plus-project.js"></script>
+</html>

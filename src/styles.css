@@ -1,0 +1,95 @@
+body {
+  background-color: #a896d8;
+  font-family: "Alkatra", system-ui;
+  min-width: 500px;
+}
+section.appBox {
+  background-color: rgb(228, 199, 224);
+  border-radius: 15px;
+  margin: 40px 10px 20px 10px;
+  padding: 30px 30px 10px 30px;
+}
+div.searchBar {
+  display: flex;
+  justify-content: stretch;
+}
+.dateTop {
+  color: #272044;
+  right: 50px;
+  opacity: 0.8;
+  position: absolute;
+  text-align: right;
+}
+.searchInput {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  color: #27204478;
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+}
+.searchButton {
+  background-color: #885df1;
+  border: none;
+  border-radius: 5px;
+  color: #f9f7fe;
+  font-size: 16px;
+  margin-left: 5px;
+  padding: 20px;
+  transition: all 150ms ease-in-out;
+  width: 25%;
+}
+.searchButton:hover {
+  opacity: 0.8;
+}
+div.currentWeather {
+  color: #272044;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+.currentWeatherDescription {
+  opacity: 0.6;
+}
+.currentHumidity,
+.currentWindspeed {
+  font-weight: bold;
+}
+.currentTempIcon {
+  font-size: 45px;
+  position: relative;
+  top: -15px;
+}
+.currentTempValue {
+  font-weight: bolder;
+  font-size: 90px;
+}
+.currentTempUnit {
+  bottom: 40px;
+  font-size: 30px;
+  left: 5px;
+  position: relative;
+}
+ul.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  font-size: 20px;
+  justify-content: space-evenly;
+  list-style: none;
+}
+ul.forecast li {
+  min-width: 150px;
+  text-align: center;
+}
+.footNote {
+  font-size: 12px;
+  line-height: 1;
+  padding: 20px;
+  text-align: center;
+}
